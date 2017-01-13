@@ -16,6 +16,8 @@ export class MainController {
 
   postMessage() {
     this.$http.post('http://localhost:5000/api/message', {msg: this.message});
-  }
 
+    // instantly show message after it is added
+    this.getMessage();
+  }
  }
