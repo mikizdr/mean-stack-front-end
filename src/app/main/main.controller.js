@@ -3,6 +3,7 @@ export class MainController {
     'ngInject';
 
     this.$http = $http;
+    // shows the messages on startup
     this.getMessage();
 
   }
